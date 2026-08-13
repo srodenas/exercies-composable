@@ -73,7 +73,7 @@ fun MyAvanceProgress(modifier: Modifier = Modifier) {
                 color = Color.Blue,
                 strokeWidth = 10.dp,
                 trackColor = Color.Yellow,
-                progress = { 0.5f }
+                progress = { progress }
 
             )
             Spacer(Modifier.height(20.dp))
@@ -88,7 +88,6 @@ fun MyAvanceProgress(modifier: Modifier = Modifier) {
                 Button(content = {
                     Text(text = "++")
                 }, onClick = { progress += 0.1f })
-
 
             }
         }
